@@ -273,6 +273,3 @@ endmenu
 
 endmenu
 
-config SAMSUNG_EXFAT
-	bool "Support exFAT filesystem driver"
-	default y

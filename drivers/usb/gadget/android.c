@@ -1227,7 +1227,7 @@ static ssize_t enable_store(struct device *pdev, struct device_attribute *attr,
 				f->disable(f);
 		}
 		dev->enabled = false;
-#if CONFIG_USB_ANDROID_SAMSUNG_COMPOSITE
+#ifdef CONFIG_USB_ANDROID_SAMSUNG_COMPOSITE
 	} else if (!enabled) {
 		usb_gadget_disconnect(cdev->gadget);
 		dev->enabled = false;
